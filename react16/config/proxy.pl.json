@@ -1,0 +1,37 @@
+{
+  "/api3/misc": {
+    "target": "http://saas-activity-sign-core-service.internal.weimobpl.com",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api3": ""
+    }
+  },
+  "/api3": {
+    "target": "http://saas-ec.internal.weimobpl.com",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api3": ""
+    }
+  },
+  "/api3/ls": {
+    "target": "http://saas-address.weimobdev.com",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api3/ls": ""
+    }
+  },
+  "/api3/media": {
+    "target": "http://pl.file.internal.weimob.com",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api3": ""
+    }
+  },
+  "/api3/interactive/base/relationship": {
+    "target": "http://saas-interactive-base-relationship.internal.weimob.com",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api3/interactive/base/relationship": ""
+    }
+  }
+}

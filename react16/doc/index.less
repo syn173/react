@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.saas-doc {
+  position: relative;
+  .saas-doc-nav {
+    position: absolute;
+    left: 0;
+    width: 260px;
+    border: 1px solid #ebecf0;
+    margin: 10px 0 0 10px;
+    list-style: none;
+    font-size: 26px;
+    color: #666;
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+        &:hover {
+          color: #30332d;
+          background-color: #cef5ff;
+        }
+      }
+      .selected {
+        color: #fff;
+        background-color: #0088cc;
+      }
+    }
+    .nav-title {
+      text-align: center;
+    }
+  }
+  .saas-doc-content {
+    margin: 10px 10px 0 280px;
+    border: 1px solid #ebecf0;
+    padding: 10px;
+  }
+}

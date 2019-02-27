@@ -1,0 +1,44 @@
+{
+"/api3/middle": {
+    "target": "http://saas-activity-sign-core-service.internal.weimobdev.com",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api3/middle": ""
+    }
+  },
+  "/api3/ls": {
+    "target": "http://saas-address.weimobdev.com",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api3": ""
+    }
+  },
+  "/api3/interactive/base/relationship": {
+    "target": "http://base-relationship.internal.weimobdev.com",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api3/interactive/base/relationship": ""
+    }
+  },
+  "/api3/mock": {
+    "target": "https://easy-mock.com/mock/596ec3c7a1d30433d83737be/index",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api3/mock": ""
+    }
+  },
+  "/api3/media": {
+    "target": "http://dev.file.internal.weimob.com",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api3": ""
+    }
+  },
+  "/api3": {
+    "target": "http://saas-ec.dev.internal.weimob.com",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api3": ""
+    }
+  }
+}
