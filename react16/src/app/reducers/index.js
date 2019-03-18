@@ -1,3 +1,3 @@
 export default {
-  index: (state) => state
+  index: (state = {}) => state
 }
