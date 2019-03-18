@@ -145,7 +145,8 @@ module.exports = {
   // You can exclude the *.map files from the build during deployment.
   devtool: shouldUseSourceMap ? 'source-map' : false,
   // In production, we only want to load the app code.
-  entry: [require.resolve('./polyfills'), paths.appIndexJs],
+  //entry: [require.resolve('./polyfills'), paths.appIndexJs],
+  entry: paths.appIndexJs,
   output: {
     // The build folder.
     path: paths.appBuild,
@@ -367,6 +368,12 @@ module.exports = {
                     },
                   },
                 ],
+                [
+                  require.resolve("babel-plugin-module-resolver"),
+                  {
+                    "root": ["./src"]
+                  }
+                ]
               ],
               cacheDirectory: true,
               // Save disk space when time isn't as important

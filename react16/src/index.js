@@ -7,8 +7,8 @@ import thunk from 'redux-thunk';
 import './index.less';
 import "antd-mobile/dist/antd-mobile.css";
 
-import RouteMap from 'app/router/routeMap';
-import Reducer from 'app/reducers';
+import RouteMap from 'app/router/index';
+import Reducer from 'app/reducers/index';
 import api from 'app/middleware/api';
 
 if (false) {
